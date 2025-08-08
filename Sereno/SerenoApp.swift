@@ -13,5 +13,9 @@ struct SerenoApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowStyle(.titleBar)
+        .windowResizability(.contentSize)
+        .defaultSize(width: 1000, height: 700)
+        .windowToolbarStyle(.unified)
     }
 }
